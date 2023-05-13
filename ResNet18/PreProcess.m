@@ -7,7 +7,7 @@ net = resnet18;
 % figure
 % plot(lgraph)
 %% load input image and resize ---------------------------------------------------------------
-Image = imread('InputOutput/ImageNet_cock.jpg');
+Image = imread('InputOutput/Lenna.png');
 flpImage = double(imresize(Image, [224 224]));
 %% get layer weights and bias -----------------------------------------------------------------
 flpStage0Weights	=	double(net.Layers(2,1).Weights);
